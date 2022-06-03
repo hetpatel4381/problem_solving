@@ -1,0 +1,11 @@
+vector<int>v;
+        int point = a[n-1];
+        v.push_back(point);
+        for(int i=n-2;i>=0;i--){
+            if(a[i]>point){
+                point = a[i];
+                v.push_back(point);
+            }
+        }
+        reverse(v.begin(),v.end());
+        return v;
